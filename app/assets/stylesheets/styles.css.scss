@@ -1,0 +1,23 @@
+$baseFontFamily: Helvetica;
+$navbarBackground: #8F0000;
+$navbarBackgroundHighlight: #8F0000;
+$btnPrimaryBackground: #8F0000;
+$bodyBackground: #0B104F;
+$navbarBrandColor: #CFB53B;
+$navbarLinkColor: white;
+$linkColor: white;
+$heroUnitBackground: #CFB53B;
+
+@import 'bootstrap';
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.footer {
+	margin-top: 100%;
+	a{
+		color: $gray;
+	}
+}
