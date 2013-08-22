@@ -1,7 +1,10 @@
-<div class="hero-unit">
+<% unless user_signed_in? %>
+    <div class="hero-unit">
   <h1>Welcome to &Delta;&Kappa;&Epsilon;Network.</h1>
   <p>Your connection to Dekes around the globe.</p>
   <p>
       <%= link_to 'Create an Account', new_user_registration_path, class: "btn btn-primary btn-large" %>
-  </p>
-</div>
+      <%= link_to 'Login', new_user_session_path, class: "btn btn-primary btn-large" %>
+        </p>
+    </div>
+<% end %>
