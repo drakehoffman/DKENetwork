@@ -5,7 +5,7 @@ DKENetwork::Application.routes.draw do
   get "users/show"
 
   devise_for :users
-  match 'users/:id' => 'users#show'
+  match 'users/:id' => 'users#show', as: :user
 
   get "pages/home"
 
