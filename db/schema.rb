@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130823020731) do
+ActiveRecord::Schema.define(:version => 20130825002236) do
 
   create_table "pins", :force => true do |t|
     t.string   "description"
@@ -50,6 +50,9 @@ ActiveRecord::Schema.define(:version => 20130823020731) do
     t.string   "state"
     t.string   "postal_code"
     t.string   "state_or_province"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.text     "job_description"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

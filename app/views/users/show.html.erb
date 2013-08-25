@@ -1,5 +1,5 @@
 <div class="well">
-	<center><h1><%= @user.name %></h1>
+	<center><h1><%= @user.first_name %> <%= @user.last_name %></h1>
 	<h3><%= @user.chapter %>, <%= @user.year %></h3>
 	<h4><%= @user.email %></h4>
 	<h4><%= @user.phone_number %></h4>
@@ -9,7 +9,8 @@
 
 <div class="well">
 	<center><h3><%= @user.title %></h3>
-	<h3><%= @user.company %></h3></center>
+	<h3><%= @user.company %></h3>
+	<p><%= @user.job_description %></p></center>
 </div>
 
 <div id="pins">

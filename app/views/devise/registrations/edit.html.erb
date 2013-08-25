@@ -3,22 +3,34 @@
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
-  <%= f.input :name %>
+<div class="well"><h3>Personal Information:</h3>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
   <%= f.input :email %>
   <%= f.input :phone_number %>
   <%= f.input :address %>
   <%= f.input :city %>
   <%= f.input :state_or_province %>
   <%= f.input :postal_code %>
+</div>
+<div class="well"><h3>DKE Information:</h3>
   <%= f.input :chapter %>
   <%= f.input :year %>
-  <%= f.input :occupation %>
+</div>
+<div class="well"><h3>Professional Information:</h3>
+  <%= f.input :occupation %> 
   <%= f.input :title %>
   <%= f.input :company %>
   <%= f.input :industry %>
+  <%= f.input :job_description %>
+</div>
+<div class="well"><h3>Password:</h3>
   <%= f.input :password, label: "New Password", autocomplete: "off" %>
   <%= f.input :password_confirmation, label: "New Password Confirmation", autocomplete: "off" %>
+</div>
+<div class="well"><h3>Confirm Changes</h3>
   <%= f.input :current_password %>
+</div>
 
   <div class="form-actions">
     <%= f.submit "Update", class: "btn btn-primary"%>
