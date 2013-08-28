@@ -4,13 +4,13 @@
   <%= f.error_notification %>
 
 <div class="well"><h3>Personal Information:</h3>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
+  <%= f.input :first_name, label: "First Name" %>
+  <%= f.input :last_name, label: "Last Name" %>
   <%= f.input :email %>
-  <%= f.input :phone_number %>
+  <%= f.input :phone_number, label: "Phone Number" %>
   <%= f.input :address %>
   <%= f.input :city %>
-  <%= f.input :state_or_province %>
+  <%= f.input :state_or_province, label: "State/Province" %>
   <%= f.input :postal_code %>
 </div>
 <div class="well"><h3>DKE Information:</h3>
@@ -22,7 +22,7 @@
   <%= f.input :title %>
   <%= f.input :company %>
   <%= f.input :industry %>
-  <%= f.input :job_description %>
+  <%= f.input :job_description, label: "Job Description" %>
 </div>
 <div class="well"><h3>Password:</h3>
   <%= f.input :password, label: "New Password", autocomplete: "off" %>

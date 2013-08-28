@@ -67,4 +67,15 @@ DKENetwork::Application.configure do
 
   # In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # Configuring Amazon S3 for Paperclip file uploads.
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['DKENetwork'],
+      :access_key_id => ENV['AKIAJMH6P46HM5WNKYHQ'],
+      :secret_access_key => ENV['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']
+    }
+  }
+
 end
