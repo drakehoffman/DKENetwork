@@ -1,9 +1,8 @@
 <% if user_signed_in? %>
 <div id="pins">
     <%= render @pins %>
+    <%= will_paginate @pins %>
 </div>
 <% else %>
 <%= render 'pages/home' %>
 <% end %>
-
-<%= will_paginate @pins %>
