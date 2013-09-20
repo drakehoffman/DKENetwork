@@ -9,6 +9,7 @@ $navbarLinkColorHover: #CFB53B;
 $linkColor: gray;
 $heroUnitBackground: #CFB53B;
 $baseLineHeight: 15px; 
+$navbarLinkBackgroundHover: transparent;
 
 @import 'bootstrap';
 body {
@@ -18,10 +19,12 @@ body {
 @import 'bootstrap-responsive';
 
 .footer {
-	margin-top: 100%;
-	a{
-		color: $gray;
-	}
+        text-align: center;
+    bottom: 0;
+    color: $grayLight;
+    a{
+        color: $gray;
+    }
 }
 
 /* Required for jQuery Masonry */
