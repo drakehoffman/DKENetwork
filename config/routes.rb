@@ -1,4 +1,10 @@
 DKENetwork::Application.routes.draw do
+  resources :comments
+  resources :pins do
+
+    resources :comments
+  end
+
   resources :pins
 
 

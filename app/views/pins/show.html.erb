@@ -11,6 +11,17 @@
 			<% end %>
 			<%= link_to 'Back', pins_path %>
 		</div>
+			<h4>Comments</h4>
+				<div id="comments">
+					<%= render :partial => @pin.comments %>
+				</div>
+					<%= simple_form_for [@pin, Comment.new] do |f| %>
+						<p>
+							<%= f.input :body, :label => "New Comment", as: :text, input_html: { rows: "3" } %>
+						<p>
+					 		<%= f.submit "Add Comment", class: "btn btn-primary" %>
+					 	</p>
+					<% end %>
 	</div>
 </div>
 
